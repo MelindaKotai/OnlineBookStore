@@ -1,0 +1,210 @@
+body{
+    margin:0;
+    padding: 0;
+    background-image: url("images/blurred-library-bookshelves_23-2148448040.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+#navbar{
+    width:100%;
+    height:105px;
+    border-bottom: 3px solid #202020;
+}
+
+#navbar ul li a {
+    margin:28px 30px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 23px;
+}
+
+#navbar ul li:hover{
+    display:block;
+    border-radius: 25px;
+    background-color: #333A3A;
+}
+
+.navbar-collapse{
+    border-radius: 25px;
+    margin:0;
+    padding:0;
+}
+
+footer{
+    border-top:3px solid #202020;
+    margin:0;
+    margin-top:50px;
+    padding:0;
+    padding-left:60px;
+    clear:both;
+}
+
+footer p{
+    color: lightgray;
+    margin:0;
+    padding:0;
+    font-size:18px;
+    word-wrap: break-word;
+
+}
+
+.continut{
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+@media only screen and (max-width : 766px) {
+    #navbar ul li {
+        margin-left: 20px;
+    }
+
+    .navbar-collapse {
+        background: #333A3A;
+    }
+
+    #navbarMenu{
+        position:absolute;
+        z-index: 1;
+        width: 95%;
+        top:110px;
+    }
+
+
+    #produs h5{
+        font-size: 17px;
+    }
+
+    #produs h6{
+        font-size: 15px;
+    }
+    .search-box input{
+    width: 50%;
+    margin-left: 20px;
+    }
+
+}
+@media only screen and (max-width : 950px) {
+    #navbar ul li a {
+        margin: 28px 8px;
+
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width : 1200px) {
+
+    #produs h5{
+        font-size: 15px;
+    }
+    #produs h6{
+        font-size: 12px;
+    }
+}
+
+.product-grid{
+    padding-top: 20px;
+    background-color: rgba(224, 219, 219, 0.2);
+}
+
+.product-grid:hover{
+    box-shadow: 0 4px 8px 0 black;
+}
+
+.image{
+    position: relative;
+    border:1px solid #434444;
+    height: 60%;
+}
+
+#bookinfo{
+    height: 25%;
+    overflow: hidden;
+}
+
+#buy{
+    background-color: transparent;
+    color:#434444;
+    border:1px solid black;
+    margin:auto;
+    width:100%;
+    color:#434444;
+}
+
+#buy:hover{
+    background-color: #333A3A;
+    color:white;
+    border:1px solid white;
+}
+
+#produs{
+    height:73vh;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    height: 100%;
+    width:100%;
+    background-color: rgba(67,68,68,0.7);
+    opacity: 0;
+    transition: .4s ease;
+}
+
+.image:hover .overlay{
+    opacity:1;
+}
+.detalii{
+    color: silver;
+    position:absolute;
+    font-size: 15px;
+    top:50%;
+    left:20%;
+
+}
+
+
+.zoom {
+    transition: transform .2s;
+    margin:auto;
+    border:1px solid black;
+
+}
+
+.zoom:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 10px 0 black;
+}
+
+div.a {
+    text-align: center;
+}
+
+#rapoarte{
+    position:absolute;
+    font-size: 25px;
+    top:50%;
+    left:40%;
+}
+#titlu_rapoarte{
+    font-size: 25px;
+    top:50%;
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    word-wrap: break-word;
+}
+#btn1{
+    padding:10px;
+    border-radius:15px;
+    background-color: #555555;
+
+}
+.lista_rapoarte{
+    padding:7px;
+    border-radius:12px;
+    width: 200px;
+}
